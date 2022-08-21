@@ -2,8 +2,9 @@
 
 
 用stack写queue：
-先写空集。然后增加数值
-重要的是pop（）部分：由于待会要改变list，所以先拿一个东西装起来，省得待会改变，这个桶子就是firstValue
+先写空集。然后增加数值。
+重要的是pop（）部分：由于待会要改变list，所以先拿一个东西装起来，省得待会改变，这个桶子就是firstValue。
+24行return firstValue是因为本来它的功能就需要返回被删除的东西。
 
           class MyQueue:
 
